@@ -197,3 +197,38 @@ h2 { font-size: clamp(2.7rem, 13vw, 7rem); line-height: 0.92; letter-spacing: -0
     font-size: .88rem;
   }
 }
+
+
+/* Navegación móvil desplazable */
+@media (max-width: 719px) {
+  .site-header {
+    gap: .75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: hidden;
+  }
+  .site-header__brand {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+  .site-nav {
+    min-width: 0;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 1.1rem;
+    padding-bottom: .2rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .site-nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
