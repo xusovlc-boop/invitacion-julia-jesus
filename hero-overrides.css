@@ -1,0 +1,39 @@
+/* Ajuste de composición de portada para proteger los rostros */
+.hero--photo .hero__content {
+  max-width: min(34rem, 42vw);
+  padding-left: 3vw;
+}
+.hero--photo .hero__content h1 {
+  max-width: 8.5ch;
+  font-size: clamp(4rem, 12vw, 8.6rem);
+}
+.hero--photo .hero__content h1 span {
+  display: block;
+  margin-left: .12em;
+}
+.hero--photo .hero__photo {
+  object-position: 62% center;
+}
+@media (max-width: 719px) {
+  .hero--photo .hero__content {
+    max-width: 18rem;
+    padding-left: 1rem;
+    padding-right: .5rem;
+  }
+  .hero--photo .hero__content h1 {
+    max-width: 8.2ch;
+    font-size: clamp(3.4rem, 17vw, 6.2rem);
+  }
+  .hero--photo .hero__photo {
+    object-position: 64% center;
+  }
+}
+@media (min-width: 720px) and (max-width: 1100px) {
+  .hero--photo .hero__content {
+    max-width: 29rem;
+    padding-left: 4vw;
+  }
+  .hero--photo .hero__content h1 {
+    font-size: clamp(3.9rem, 13.5vw, 7.8rem);
+  }
+}
