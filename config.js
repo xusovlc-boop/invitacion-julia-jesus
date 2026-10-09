@@ -21,8 +21,8 @@ window.INVITATION_CONFIG = {
   venue: {
     mapsUrl: "https://www.google.com/maps/place/Mas+Les+Lloses/@39.650392,-0.2971002,17z/data=!3m1!4b1!4m6!3m5!1s0xd603ffe3b1613fb:0xf491e6d823c53425!8m2!3d39.6503879!4d-0.2945253!16s%2Fg%2F11cmr20dpt?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
     description: "El lugar donde nos encontraremos para celebrar este día. Pronto añadiremos aquí cualquier indicación que pueda resultaros útil.",
-    image: "",
-    imageAlt: ""
+    image: "assets/mas-les-lloses.png",
+    imageAlt: "Ilustración de Mas Les Lloses, lugar de la celebración"
   },
   schedule: [{ time: "12:45", label: "Inicio de la ceremonia" }],
   transport: {
@@ -40,7 +40,7 @@ window.INVITATION_CONFIG = {
    * Sustituye este valor por HH:MM cuando decidáis otra referencia.
    */
   countdown: { referenceTime: "12:45", timezone: "Europe/Madrid" },
-  images: { hero: "", heroAlt: "Fotografía de Júlia y Jesús", venue: "" },
+  images: { hero: "", heroAlt: "Fotografía de Júlia y Jesús", venue: "assets/mas-les-lloses.png" },
   // Introduce aquí la URL completa del único Google Form de asistencia y sugerencias.
   forms: { url: "https://docs.google.com/forms/d/e/1FAIpQLSdtb-fXFIuBlKXIap61AIZf19zRRfQXYqGVatMNtv6XOLmVaQ/viewform?usp=publish-editor" },
   galleryUrl: "",
