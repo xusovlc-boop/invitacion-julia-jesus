@@ -25,6 +25,13 @@
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <a class="site-header__brand" href="#contenido" aria-label="Júlia y Jesús, volver al inicio"><span class="brand-leaf" aria-hidden="true">✦</span><span>Júlia &amp; Jesús</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="menu-toggle__label">Menú</span><span class="menu-toggle__icon" aria-hidden="true">＋</span></button>
+      <nav class="site-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#asistencia">Asistencia</a><a href="#horarios">Horarios</a><a href="#ubicaciones">Ubicaciones</a><a href="#fotos">Fotos</a><a href="#sugerencias">Sugerencias</a><a href="#regalo">Regalo</a>
+      </nav>
+    </header>
     <main id="contenido">
       <section class="hero section-frame" aria-labelledby="hero-title">
         <div class="hero__grain" aria-hidden="true"></div>
@@ -52,28 +59,32 @@
         <a class="scroll-cue" href="#bienvenida" aria-label="Continuar hacia la invitación"><span>Descubrir</span><span class="scroll-cue__line" aria-hidden="true"></span></a>
       </section>
       <section class="welcome section-frame section-frame--light" id="bienvenida" aria-labelledby="welcome-title">
-        <div class="section-index">01</div><div class="welcome__mark" aria-hidden="true">J<span>&amp;</span>J</div>
+        <div class="section-index">01</div>
         <div class="copy-column"><p class="eyebrow">Querida familia, queridos amigos</p><h2 id="welcome-title">Nos hace mucha ilusión<br /><em>compartirlo contigo.</em></h2><p class="body-copy" data-welcome>Estamos preparando un día para celebrar lo que más nos importa: encontrarnos, brindar y teneros cerca. Aquí iremos guardando todos los detalles.</p></div>
       </section>
-      <section class="day section-frame" id="el-dia" aria-labelledby="day-title">
-        <div class="section-index section-index--light">02</div><div class="day__heading"><p class="eyebrow eyebrow--light">Apunta la fecha</p><h2 id="day-title">El día<br /><em>de nuestra boda</em></h2><p class="day__date" data-date-full>sábado, 10 de abril de 2027</p></div>
+      <section class="attendance section-frame" id="asistencia" aria-labelledby="attendance-title"><div class="section-index section-index--light">02</div><div class="feature-copy"><p class="eyebrow eyebrow--light">Una respuesta nos ayuda mucho</p><h2 id="attendance-title">¿Nos<br /><em>acompañas?</em></h2><p>Confirma tu asistencia y cuéntanos todo lo que debamos saber para preparar el día con cariño.</p><a class="button button--light" data-form-link href="#" target="_blank" rel="noreferrer">Confirmar asistencia <span aria-hidden="true">↗</span></a><p class="pending-note pending-note--light" data-form-pending>Estamos terminando de preparar el formulario.</p></div><div class="attendance__detail"><p class="eyebrow eyebrow--light">Formulario privado</p><p>Las respuestas se recogerán en un formulario de Google y quedarán disponibles únicamente para la organización de la boda.</p><div class="detail-rule" aria-hidden="true"></div><p class="small-copy">También podrás dejarnos comentarios o sugerencias dentro del mismo formulario.</p></div></section>
+      <section class="day section-frame" id="horarios" aria-labelledby="day-title">
+        <div class="section-index section-index--light">03</div><div class="day__heading"><p class="eyebrow eyebrow--light">Apunta la fecha</p><h2 id="day-title">El día<br /><em>de nuestra boda</em></h2><p class="day__date" data-date-full>sábado, 10 de abril de 2027</p></div>
         <div class="timeline" data-schedule aria-live="polite"></div><p class="empty-note" data-schedule-empty>Los horarios se añadirán aquí cuando estén confirmados.</p>
       </section>
-      <section class="place section-frame section-frame--light" id="lugar" aria-labelledby="place-title">
-        <div class="section-index">03</div><div class="place__layout">
+      <section class="place section-frame section-frame--light" id="ubicaciones" aria-labelledby="place-title">
+        <div class="section-index">04</div><div class="place__layout">
           <div class="place__art" data-venue-art><div class="place__stamp" aria-hidden="true"><span>El lugar</span><strong>Mas<br />Les<br />Lloses</strong><i>·</i><small>10 · 04 · 27</small></div>
             <svg class="place__illustration" viewBox="0 0 430 380" role="img" aria-label="Ilustración botánica mediterránea">
               <path class="house-line" d="M82 271 209 143l143 128M117 238v87h184v-87M159 209v116M263 209v116M180 325v-87h58v87" /><path class="house-line house-line--fine" d="M63 325h294M192 143h30M203 161v-32M96 217h35M294 217h36" /><path class="branch-line" d="M53 325c37-38 37-91 23-146M73 243c-25-10-39-28-42-50M80 211c25-14 41-34 43-57M72 264c25-4 45 5 61 27" /><path class="branch-leaf" d="M32 193c17-2 31 6 40 22-18 4-32-4-40-22ZM83 157c14 12 17 27 11 43-14-10-17-25-11-43ZM73 244c-14-9-19-22-15-37 14 7 20 19 15 37ZM102 270c15-3 28 3 38 17-16 3-28-3-38-17Z" />
             </svg>
           </div>
-          <div class="place__copy"><p class="eyebrow">El lugar</p><h2 id="place-title" data-venue>Mas Les Lloses</h2><p class="body-copy" data-venue-description>El lugar donde nos encontraremos para celebrar este día. Pronto añadiremos aquí cualquier indicación que pueda resultaros útil.</p><a class="text-link" data-maps-link href="https://www.google.com/maps" target="_blank" rel="noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a></div>
+          <div class="place__copy"><p class="eyebrow">El lugar</p><h2 id="place-title" data-venue>Mas Les Lloses</h2><p class="body-copy" data-venue-description>El lugar donde nos encontraremos para celebrar este día. Pronto añadiremos aquí cualquier indicación que pueda resultaros útil.</p><a class="text-link" data-maps-link href="https://www.google.com/maps" target="_blank" rel="noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a><div class="transport-card"><p class="eyebrow">Salidas y transporte</p><div data-transport></div><p class="pending-note" data-transport-empty>Las paradas y los horarios del autobús se añadirán cuando estén confirmados.</p></div></div>
         </div>
       </section>
+      <section class="photos section-frame section-frame--light" id="fotos" aria-labelledby="photos-title"><div class="section-index">05</div><div class="split-copy"><div><p class="eyebrow">Después de la boda</p><h2 id="photos-title">Guardemos<br /><em>cada momento.</em></h2></div><div><p class="body-copy">¡Queremos recordar cada momento de este día! Después de la boda compartiremos con vosotros un enlace para que podáis ver y descargar la galería de fotografías.</p><a class="text-link" data-gallery-link href="#" target="_blank" rel="noreferrer" hidden>Ver la galería <span aria-hidden="true">↗</span></a></div></div></section>
+      <section class="suggestions section-frame" id="sugerencias" aria-labelledby="suggestions-title"><div class="section-index section-index--light">06</div><div class="suggestions__copy"><p class="eyebrow eyebrow--light">Para ayudarnos a preparar el día</p><h2 id="suggestions-title">¿Algo que<br /><em>debamos saber?</em></h2><p>Si tienes alguna sugerencia, necesidad o comentario, puedes contárnoslo de forma privada en el formulario.</p><a class="button button--light" data-form-link href="#" target="_blank" rel="noreferrer">Enviar una sugerencia <span aria-hidden="true">↗</span></a><p class="pending-note pending-note--light" data-form-pending>El formulario estará disponible próximamente.</p></div></section>
+      <section class="gift section-frame section-frame--light" id="regalo" aria-labelledby="gift-title"><div class="section-index">07</div><div class="gift__copy"><p class="eyebrow">Un detalle, si os apetece</p><h2 id="gift-title">Gracias por<br /><em>acompañarnos.</em></h2><p>Lo más importante para nosotros es compartir el día contigo. Si deseas hacernos un regalo, encontrarás aquí los datos cuando estén preparados.</p><div class="gift__iban" data-gift-details hidden><code data-iban></code><button class="copy-button" type="button" data-copy-iban>Copiar IBAN</button><span class="copy-confirmation" data-copy-confirmation role="status" aria-live="polite"></span></div></div></section>
       <section class="practical section-frame" id="practico" aria-labelledby="practical-title" data-practical-section>
         <div class="section-index section-index--light">04</div><div class="practical__heading"><p class="eyebrow eyebrow--light">Para tenerlo a mano</p><h2 id="practical-title">Información<br /><em>práctica</em></h2></div><div class="practical__list" data-logistics></div>
       </section>
       <section class="countdown section-frame section-frame--light" id="cuenta-atras" aria-labelledby="countdown-title">
-        <div class="section-index">05</div><div class="countdown__content"><p class="eyebrow">Cada vez falta menos</p><h2 id="countdown-title">Nos vemos<br /><em>en un suspiro</em></h2>
+        <div class="section-index">08</div><div class="countdown__content"><p class="eyebrow">Cada vez falta menos</p><h2 id="countdown-title">Nos vemos<br /><em>en un suspiro</em></h2>
           <div class="countdown__grid" data-countdown aria-live="polite"><div><strong data-unit="days">—</strong><span>días</span></div><div><strong data-unit="hours">—</strong><span>horas</span></div><div><strong data-unit="minutes">—</strong><span>minutos</span></div><div><strong data-unit="seconds">—</strong><span>segundos</span></div></div>
           <p class="countdown__message" data-countdown-message>Hasta el 10 de abril de 2027</p><p class="countdown__note">Referencia temporal editable en config.js.</p>
         </div>
@@ -81,6 +92,6 @@
       </section>
       <section class="closing section-frame" aria-labelledby="closing-title"><div class="closing__ornament" aria-hidden="true"><span></span><i>✳</i><span></span></div><p class="eyebrow">Con cariño</p><h2 id="closing-title" data-closing-line>Qué alegría poder vivirlo juntos.</h2><p class="closing__names" data-couple-names>Júlia &amp; Jesús</p><p class="closing__date" data-date-label>10 de abril de 2027</p><a class="back-top" href="#contenido">Volver arriba <span aria-hidden="true">↑</span></a></section>
     </main>
-    <footer class="site-footer"><span>J &amp; J</span><span>2027</span></footer>
+    <footer class="site-footer"><span>Júlia &amp; Jesús</span><span>2027</span></footer>
   </body>
 </html>

@@ -24,21 +24,34 @@ window.INVITATION_CONFIG = {
     image: "",
     imageAlt: ""
   },
-  // Horarios no confirmados todavía: no se muestran hasta rellenar los valores.
-  schedule: [
-    { time: "", label: "Llegada de invitados" },
-    { time: "", label: "Ceremonia" },
-    { time: "", label: "Celebración" }
-  ],
-  // Información práctica opcional. Las entradas vacías se ocultan.
-  logistics: { arrival: "", parking: "", transport: "", notes: "" },
+  schedule: [{ time: "12:45", label: "Inicio de la ceremonia" }],
+  transport: {
+    departureLocation: "",
+    departureTime: "",
+    departureMapUrl: "",
+    return1Time: "",
+    return2Time: "",
+    note: ""
+  },
+  logistics: { arrival: "", parking: "", notes: "" },
   /*
    * Referencia configurable mientras no haya hora de inicio confirmada.
-   * Se calcula como las 12:00 de Europe/Madrid del día de la boda.
+   * Se calcula como las 12:45 de Europe/Madrid del día de la boda.
    * Sustituye este valor por HH:MM cuando decidáis otra referencia.
    */
-  countdown: { referenceTime: "12:00", timezone: "Europe/Madrid" },
-  images: { hero: "", venue: "" },
+  countdown: { referenceTime: "12:45", timezone: "Europe/Madrid" },
+  images: { hero: "", heroAlt: "Fotografía de Júlia y Jesús", venue: "" },
+  // Introduce aquí la URL completa del único Google Form de asistencia y sugerencias.
+  forms: { url: "" },
+  galleryUrl: "",
+  gift: { iban: "" },
+  privacy: {
+    controller: "",
+    purpose: "Gestionar la confirmación de asistencia y las necesidades de organización de la boda.",
+    contact: "",
+    retention: "",
+    rights: ""
+  },
   theme: { ivory: "#F4EFE3", olive: "#737B52", sand: "#D8C5A7", ink: "#293326", terracotta: "#B47D62" },
   sharing: {
     title: "Júlia & Jesús — Nuestra boda",
