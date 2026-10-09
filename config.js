@@ -40,7 +40,7 @@ window.INVITATION_CONFIG = {
    * Sustituye este valor por HH:MM cuando decidáis otra referencia.
    */
   countdown: { referenceTime: "12:45", timezone: "Europe/Madrid" },
-  images: { hero: "", heroAlt: "Fotografía de Júlia y Jesús", venue: "assets/mas-les-lloses.png" },
+  images: { hero: "CONAMOR26JULIAYJESUS-115.jpg", heroAlt: "Fotografía de Júlia y Jesús", venue: "assets/mas-les-lloses.png" },
   // Introduce aquí la URL completa del único Google Form de asistencia y sugerencias.
   forms: { url: "https://docs.google.com/forms/d/e/1FAIpQLSdtb-fXFIuBlKXIap61AIZf19zRRfQXYqGVatMNtv6XOLmVaQ/viewform?usp=publish-editor" },
   galleryUrl: "",
