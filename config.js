@@ -52,7 +52,7 @@ window.INVITATION_CONFIG = {
     retention: "",
     rights: ""
   },
-  theme: { ivory: "#F4EFE3", olive: "#737B52", sand: "#D8C5A7", ink: "#293326", terracotta: "#B47D62" },
+  theme: { ivory: "#F8F6F1", olive: "#A8BBCB", sand: "#F3B8A5", ink: "#304B65", terracotta: "#E89587" },
   sharing: {
     title: "Júlia & Jesús — Nuestra boda",
     description: "Una invitación para compartir un día muy especial: 10 de abril de 2027, en Mas Les Lloses.",
