@@ -42,7 +42,7 @@ window.INVITATION_CONFIG = {
   countdown: { referenceTime: "12:45", timezone: "Europe/Madrid" },
   images: { hero: "", heroAlt: "Fotografía de Júlia y Jesús", venue: "" },
   // Introduce aquí la URL completa del único Google Form de asistencia y sugerencias.
-  forms: { url: "" },
+  forms: { url: "https://docs.google.com/forms/d/e/1FAIpQLSdtb-fXFIuBlKXIap61AIZf19zRRfQXYqGVatMNtv6XOLmVaQ/viewform?usp=publish-editor" },
   galleryUrl: "",
   gift: { iban: "" },
   privacy: {
