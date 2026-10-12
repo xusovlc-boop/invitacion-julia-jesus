@@ -207,6 +207,17 @@
     font-size: clamp(3.25rem, 5.8vw, 6.5rem);
     line-height: .95;
   }
+  .welcome .copy-column > p:not(.eyebrow),
+  .attendance .feature-copy > p:not(.eyebrow),
+  .attendance__detail p,
+  .place__copy > p:not(.eyebrow),
+  .suggestions .suggestions__copy > p:not(.eyebrow),
+  .gift .gift__copy > p:not(.eyebrow),
+  .countdown__message,
+  .countdown__note {
+    font-size: clamp(1rem, 1.1vw, 1.125rem);
+    line-height: 1.6;
+  }
   .welcome .copy-column,
   .suggestions__copy,
   .gift__copy,
