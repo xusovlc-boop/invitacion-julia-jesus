@@ -139,6 +139,90 @@
   }
 }
 
+
+/* Composición editorial de escritorio: límites de lectura y portada estable */
+@media (min-width: 720px) {
+  .site-header {
+    padding: .85rem clamp(1.5rem, 4vw, 4rem);
+  }
+  .site-header__brand {
+    font-size: .75rem;
+  }
+  .menu-toggle {
+    min-width: 6.2rem;
+    min-height: 2.75rem;
+  }
+  .site-nav {
+    right: clamp(1.5rem, 4vw, 4rem);
+    min-width: 16rem;
+  }
+
+  .hero--photo {
+    height: 100svh;
+    min-height: 100svh;
+    padding: 5.5rem clamp(2rem, 6vw, 6rem) 3.2rem;
+  }
+  .hero--photo .hero__photo {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 54% 47%;
+  }
+  .hero--photo::after {
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(41, 51, 38, .03) 20%, rgba(41, 51, 38, .08) 52%, rgba(41, 51, 38, .84) 100%);
+  }
+  .hero--photo .hero__content {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 1100px);
+    margin-inline: auto;
+    padding: 0;
+  }
+  .hero--photo .hero__content h1 {
+    font-size: clamp(4.25rem, 7vw, 7.2rem);
+  }
+
+  .section-frame {
+    padding-inline: clamp(2rem, 6vw, 6rem);
+  }
+  .section-frame h2,
+  h2 {
+    font-size: clamp(3.25rem, 5.8vw, 6.5rem);
+    line-height: .95;
+  }
+  .welcome .copy-column,
+  .suggestions__copy,
+  .gift__copy,
+  .countdown__content {
+    width: min(100%, 760px);
+    margin-inline: auto;
+  }
+  .attendance {
+    grid-template-columns: minmax(0, 1.25fr) minmax(16rem, .75fr);
+    gap: clamp(3rem, 6vw, 6rem);
+    align-items: end;
+  }
+  .attendance .feature-copy {
+    max-width: 680px;
+  }
+  .attendance__detail {
+    max-width: 360px;
+  }
+  .place__layout {
+    width: min(100%, 1100px);
+    margin-inline: auto;
+  }
+  main p {
+    max-width: 48rem;
+    font-size: clamp(1rem, 1.1vw, 1.125rem);
+    line-height: 1.6;
+  }
+}
+
 /* Único bloque móvil: escala normal, compacta y accesible */
 @media (max-width: 719px) {
   html { font-size: 16px; }
@@ -159,7 +243,7 @@
   }
   .site-header__brand {
     min-width: 0;
-    font-size: clamp(1.125rem, 5.2vw, 1.375rem);
+    font-size: clamp(.9375rem, 4.2vw, 1.0625rem);
     line-height: 1.15;
     letter-spacing: .07em;
     white-space: nowrap;
@@ -268,6 +352,7 @@
   .hero--photo .hero__content h1 {
     font-size: clamp(2.25rem, 10.8vw, 2.75rem);
     line-height: .95;
+    margin-bottom: 1.75rem;
     letter-spacing: -.045em;
   }
   .hero--photo .hero__content h1 span {
