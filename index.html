@@ -19,7 +19,7 @@
     <meta name="twitter:description" content="Una invitación para compartir un día muy especial: 10 de abril de 2027, en Mas Les Lloses." />
     <meta name="twitter:image" content="https://xusovlc-boop.github.io/invitacion-julia-jesus/assets/og-image.svg" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=10" />
+    <link rel="stylesheet" href="styles.css?v=11" />
     <link rel="stylesheet" href="hero-overrides.css?v=3" />
     <script src="config.js"></script>
     <script src="script.js" defer></script>
@@ -27,10 +27,10 @@
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
-      <a class="site-header__brand" href="#contenido" aria-label="Júlia y Jesús, volver al inicio"><span class="brand-leaf" aria-hidden="true">✦</span><span>Júlia &amp; Jesús</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="menu-toggle__label">Menú</span><span class="menu-toggle__icon" aria-hidden="true">＋</span></button>
+      <a class="site-header__brand" href="#contenido" aria-label="Júlia y Jesús, volver al inicio"><span>Júlia &amp; Jesús</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="menu-toggle__label">Menú</span><span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i><i></i></span></button>
       <nav class="site-nav" id="main-nav" aria-label="Navegación principal">
-        <a href="#asistencia">Asistencia</a><a href="#horarios">Horarios</a><a href="#ubicaciones">Ubicaciones</a><a href="#fotos">Fotos</a><a href="#sugerencias">Sugerencias</a><a href="#regalo">Regalo</a>
+        <a href="#asistencia">Asistencia</a><a href="#horarios">Horarios</a><a href="#ubicaciones">Ubicaciones</a><a href="#sugerencias">Sugerencias</a><a href="#regalo">Regalo</a>
       </nav>
     </header>
     <main id="contenido">
@@ -78,14 +78,13 @@
           <div class="place__copy"><p class="eyebrow">El lugar</p><h2 id="place-title" data-venue>Mas Les Lloses</h2><p class="body-copy" data-venue-description>El lugar donde nos encontraremos para celebrar este día. Pronto añadiremos aquí cualquier indicación que pueda resultaros útil.</p><a class="text-link" data-maps-link href="https://www.google.com/maps" target="_blank" rel="noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a><div class="transport-card"><p class="eyebrow">Salidas y transporte</p><div data-transport></div><p class="pending-note" data-transport-empty>Las paradas y los horarios del autobús se añadirán cuando estén confirmados.</p></div></div>
         </div>
       </section>
-      <section class="photos section-frame section-frame--light" id="fotos" aria-labelledby="photos-title"><div class="section-index">05</div><div class="split-copy"><div><p class="eyebrow">Después de la boda</p><h2 id="photos-title">Guardemos<br /><em>cada momento.</em></h2></div><div><p class="body-copy">¡Queremos recordar cada momento de este día! Después de la boda compartiremos con vosotros un enlace para que podáis ver y descargar la galería de fotografías.</p><a class="text-link" data-gallery-link href="#" target="_blank" rel="noreferrer" hidden>Ver la galería <span aria-hidden="true">↗</span></a></div></div></section>
-      <section class="suggestions section-frame" id="sugerencias" aria-labelledby="suggestions-title"><div class="section-index section-index--light">06</div><div class="suggestions__copy"><p class="eyebrow eyebrow--light">Para ayudarnos a preparar el día</p><h2 id="suggestions-title">¿Algo que<br /><em>debamos saber?</em></h2><p>Si tienes alguna sugerencia, necesidad o comentario, puedes contárnoslo de forma privada en el formulario.</p><a class="button button--light" data-form-link href="#" target="_blank" rel="noreferrer">Enviar una sugerencia <span aria-hidden="true">↗</span></a><p class="pending-note pending-note--light" data-form-pending>El formulario estará disponible próximamente.</p></div></section>
-      <section class="gift section-frame section-frame--light" id="regalo" aria-labelledby="gift-title"><div class="section-index">07</div><div class="gift__copy"><p class="eyebrow">Un detalle, si os apetece</p><h2 id="gift-title">Gracias por<br /><em>acompañarnos.</em></h2><p>Lo más importante para nosotros es compartir el día contigo. Si deseas hacernos un regalo, encontrarás aquí los datos cuando estén preparados.</p><div class="gift__iban" data-gift-details hidden><code data-iban></code><button class="copy-button" type="button" data-copy-iban>Copiar IBAN</button><span class="copy-confirmation" data-copy-confirmation role="status" aria-live="polite"></span></div></div></section>
+      <section class="suggestions section-frame" id="sugerencias" aria-labelledby="suggestions-title"><div class="section-index section-index--light">05</div><div class="suggestions__copy"><p class="eyebrow eyebrow--light">Para ayudarnos a preparar el día</p><h2 id="suggestions-title">¿Algo que<br /><em>debamos saber?</em></h2><p>Si tienes alguna sugerencia, necesidad o comentario, puedes contárnoslo de forma privada en el formulario.</p><a class="button button--light" data-form-link data-suggestions-link href="#" target="_blank" rel="noreferrer">Enviar una sugerencia <span aria-hidden="true">↗</span></a><p class="pending-note pending-note--light" data-form-pending>El formulario estará disponible próximamente.</p></div></section>
+      <section class="gift section-frame section-frame--light" id="regalo" aria-labelledby="gift-title"><div class="section-index">06</div><div class="gift__copy"><p class="eyebrow">Un detalle, si os apetece</p><h2 id="gift-title">Gracias por<br /><em>acompañarnos.</em></h2><p>Lo más importante para nosotros es compartir el día contigo. Si deseas hacernos un regalo, encontrarás aquí los datos cuando estén preparados.</p><div class="gift__iban" data-gift-details hidden><code data-iban></code><button class="copy-button" type="button" data-copy-iban>Copiar IBAN</button><span class="copy-confirmation" data-copy-confirmation role="status" aria-live="polite"></span></div></div></section>
       <section class="practical section-frame" id="practico" aria-labelledby="practical-title" data-practical-section>
         <div class="section-index section-index--light">04</div><div class="practical__heading"><p class="eyebrow eyebrow--light">Para tenerlo a mano</p><h2 id="practical-title">Información<br /><em>práctica</em></h2></div><div class="practical__list" data-logistics></div>
       </section>
       <section class="countdown section-frame section-frame--light" id="cuenta-atras" aria-labelledby="countdown-title">
-        <div class="section-index">08</div><div class="countdown__content"><p class="eyebrow">Cada vez falta menos</p><h2 id="countdown-title">Nos vemos<br /><em>en un suspiro</em></h2>
+        <div class="section-index">07</div><div class="countdown__content"><p class="eyebrow">Cada vez falta menos</p><h2 id="countdown-title">Nos vemos<br /><em>en un suspiro</em></h2>
           <div class="countdown__grid" data-countdown aria-live="polite"><div><strong data-unit="days">—</strong><span>días</span></div><div><strong data-unit="hours">—</strong><span>horas</span></div><div><strong data-unit="minutes">—</strong><span>minutos</span></div><div><strong data-unit="seconds">—</strong><span>segundos</span></div></div>
           <p class="countdown__message" data-countdown-message>Hasta el 10 de abril de 2027</p><p class="countdown__note">Referencia temporal editable en config.js.</p>
         </div>
