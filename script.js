@@ -61,9 +61,14 @@
   }
   function renderForms() {
     const url = clean(config.forms && config.forms.url);
+    const suggestionsUrl = clean(config.forms && config.forms.suggestionsUrl) || url;
     const links = $$("[data-form-link]"), pending = $$("[data-form-pending]");
     if (!url) { links.forEach((link) => { link.hidden = true; }); return; }
-    links.forEach((link) => { link.href = url; link.hidden = false; }); pending.forEach((note) => { note.hidden = true; });
+    links.forEach((link) => {
+      link.href = link.matches("[data-suggestions-link]") ? suggestionsUrl : url;
+      link.hidden = false;
+    });
+    pending.forEach((note) => { note.hidden = true; });
   }
   function renderGallery() {
     const link = $("[data-gallery-link]");
