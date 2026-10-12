@@ -362,3 +362,16 @@
     line-height: 1.35;
   }
 }
+
+
+/* Prioridad final para los textos de contenido en móvil */
+@media (max-width: 719px) {
+  .welcome .copy-column > p:not(.eyebrow),
+  .attendance .feature-copy > p:not(.eyebrow),
+  .place__copy > p:not(.eyebrow),
+  .suggestions .suggestions__copy > p:not(.eyebrow),
+  .gift .gift__copy > p:not(.eyebrow) {
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+}
