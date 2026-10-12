@@ -364,6 +364,10 @@
     font-size: clamp(1.0625rem, 4.5vw, 1.25rem);
     line-height: 1.3;
     letter-spacing: .08em;
+    margin: 0;
+  }
+  .hero--photo .hero__venue {
+    margin: .65rem 0 0;
   }
   .hero--photo .hero__opening {
     display: block;
