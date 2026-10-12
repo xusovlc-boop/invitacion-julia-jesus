@@ -17,7 +17,9 @@
   function renderHeroImage() {
     const path = clean(config.images && config.images.hero), hero = $(".hero");
     if (!path || !hero) return;
-    const existing = $(".hero__photo", hero);
+    const photos = $(".hero__photo", hero);
+    const existing = photos[0];
+    photos.slice(1).forEach((image) => image.remove());
     if (existing) {
       existing.alt = clean(config.images.heroAlt) || "Fotografía de Júlia y Jesús";
       hero.classList.add("hero--photo");
@@ -34,9 +36,3 @@
     image.src = path;
     image.alt = config.venue.imageAlt || "Fotografía del lugar de la celebración";
     art.prepend(image);
-    const fallback = $(".place__illustration", art); if (fallback) fallback.setAttribute("aria-hidden", "true");
-  }
-  function renderSchedule() {
-    const entries = (config.schedule || []).filter((item) => clean(item.time) && clean(item.label)), transport = config.transport || {}, timeline = $("[data-schedule]"), empty = $("[data-schedule-empty]");
-    if (clean(transport.departureTime) && clean(transport.departureLocation)) entries.push({ time: transport.departureTime, label: "Salida del autobús · " + transport.departureLocation });
-    if (clean(transport.return1Time)) entries.push({ time: transport.return1Time, label: "Autobús de vuelta 1" });
