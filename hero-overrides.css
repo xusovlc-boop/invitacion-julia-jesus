@@ -261,11 +261,15 @@
     min-height: 4.25rem;
     padding: .75rem .8rem;
     gap: .65rem;
-    border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+    justify-content: flex-end;
+    background: transparent;
+    border: 1px solid transparent;
     border-radius: .95rem;
-    box-shadow: 0 .6rem 1.5rem rgba(41, 51, 38, .16);
+    box-shadow: none;
+    backdrop-filter: none;
   }
   .site-header__brand {
+    display: none;
     min-width: 0;
     font-size: clamp(.9375rem, 4.2vw, 1.0625rem);
     line-height: 1.15;
@@ -352,18 +356,17 @@
     justify-content: flex-end;
   }
   .hero--photo .hero__photo {
-    top: 5.25rem;
-    right: 0;
-    bottom: auto;
-    left: 0;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
     width: 100%;
-    height: min(47svh, 22rem);
-    max-height: 22rem;
-    object-fit: contain;
-    object-position: center center;
-    background: var(--ink);
+    height: 100%;
+    object-fit: cover;
+    object-position: 54% 47%;
+    background: transparent;
   }
   .hero--photo::after {
+    z-index: 1;
     background: linear-gradient(180deg, rgba(41, 51, 38, 0) 30%, rgba(41, 51, 38, .12) 52%, rgba(41, 51, 38, .9) 100%);
   }
   .hero--photo .hero__content {
