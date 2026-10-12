@@ -32,10 +32,10 @@ window.INVITATION_CONFIG = {
    */
   countdown: { referenceTime: "12:45", timezone: "Europe/Madrid" },
   images: { hero: "CONAMOR26JULIAYJESUS-115.jpg", heroAlt: "Fotografía de Júlia y Jesús", venue: "assets/mas-les-lloses.png" },
-  // Introduce aquí la URL completa del único Google Form de asistencia y sugerencias.
+  // Formularios independientes: asistencia y sugerencias.
   forms: {
     url: "https://docs.google.com/forms/d/e/1FAIpQLSdtb-fXFIuBlKXIap61AIZf19zRRfQXYqGVatMNtv6XOLmVaQ/viewform",
-    suggestionsUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdtb-fXFIuBlKXIap61AIZf19zRRfQXYqGVatMNtv6XOLmVaQ/viewform"
+    suggestionsUrl: "https://docs.google.com/forms/d/e/1FAIpQLScjLQns6rwUxMKNkxRw9Y9ASBaTvvGqjOvVEkgRUhNGxnSUQA/viewform"
   },
   galleryUrl: "",
   gift: { iban: "" },
@@ -53,3 +53,4 @@ window.INVITATION_CONFIG = {
     publicUrl: "https://xusovlc-boop.github.io/invitacion-julia-jesus/"
   }
 };
+
