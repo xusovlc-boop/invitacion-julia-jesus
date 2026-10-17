@@ -50,7 +50,6 @@ window.INVITATION_CONFIG = {
   sharing: {
     title: "Júlia & Jesús — Nuestra boda",
     description: "Una invitación para compartir un día muy especial: 10 de abril de 2027, en Mas Les Lloses.",
-    publicUrl: "https://xusovlc-boop.github.io/invitacion-julia-jesus/"
+    publicUrl: "https://boda-julia-jesus.github.io/"
   }
 };
-
